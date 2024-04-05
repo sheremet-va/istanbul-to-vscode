@@ -225,7 +225,7 @@ const mapLocation = async (
 
 const mapCount = (opts: IIstanbulCoverageOptions, n: number) => (opts.booleanCounts ? n > 0 : n);
 
-class IstanbulFileCoverage extends vscode.FileCoverage {
+export class IstanbulFileCoverage extends vscode.FileCoverage {
   constructor(
     uri: vscode.Uri,
     public readonly original: FileCoverageData,
